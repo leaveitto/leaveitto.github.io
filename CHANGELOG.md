@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.3.0] – 2026-11-26
+### Changed
+- Coursework page shows all 10 outputs in one grid, newest first; each card's tag now starts with its year level (e.g. "4th Year · ITC C611").
+- Replaced the public resume with the corrected version (contact number removed).
+- "Let's talk" text is centered instead of justified.
+
+### Removed
+- Year-level section headings on the coursework page.
+
 ## [1.2.0] – 2026-11-26
 ### Removed
 - Year filter on the coursework page (year headings kept).

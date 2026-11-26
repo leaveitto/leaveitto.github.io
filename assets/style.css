@@ -203,7 +203,7 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 }
 
 /* Justified paragraph text */
-.hero .lead, .section-head p, .project p, .card p, .about-grid p, .timeline p, .page-head p, .contact p {
+.hero .lead, .section-head p, .project p, .card p, .about-grid p, .timeline p, .page-head p {
   text-align: justify; hyphens: auto; -webkit-hyphens: auto;
 }
 .project p.note, .project p.role { text-align: left; }
@@ -224,3 +224,5 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 /* Avoid single dangling words at the end of paragraphs */
 p { text-wrap: pretty; }
 .section-head p, .page-head p { text-align: left; }
+
+.contact p { text-align: center; hyphens: none; -webkit-hyphens: none; }
