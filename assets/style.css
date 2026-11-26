@@ -54,9 +54,9 @@ img { max-width: 100%; display: block; }
 
 /* Hero */
 .hero { padding: 88px 0 72px; border-bottom: 1px solid var(--line); }
-.hero .wrap { display: grid; grid-template-columns: 1fr 260px; gap: 56px; align-items: center; }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 48px; align-items: center; }
 .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
-.hero h1 { font-size: clamp(34px, 5vw, 52px); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 18px; }
+.hero h1 { font-size: clamp(28px, 3.3vw, 40px); line-height: 1.1; letter-spacing: -0.03em; margin: 0 0 18px; white-space: nowrap; }
 .hero .lead { font-size: 18px; color: var(--ink-2); max-width: 600px; margin: 0 0 28px; }
 .hero .actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .status {
@@ -65,7 +65,7 @@ img { max-width: 100%; display: block; }
 }
 .status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ink); }
 .photo {
-  width: 260px; height: 260px; border-radius: 50%; object-fit: cover;
+  width: 220px; height: 220px; border-radius: 50%; object-fit: cover;
   border: 1px solid var(--line); filter: grayscale(8%);
 }
 
@@ -74,7 +74,7 @@ section { padding: 80px 0; border-bottom: 1px solid var(--line); }
 section:last-of-type { border-bottom: none; }
 .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 36px; flex-wrap: wrap; }
 .section-head h2 { font-size: 30px; letter-spacing: -0.02em; margin: 0; }
-.section-head p { margin: 6px 0 0; color: var(--muted); max-width: 560px; }
+.section-head p { margin: 6px 0 0; color: var(--muted); }
 
 /* Project cards */
 .projects { display: grid; gap: 20px; }
@@ -180,12 +180,13 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 /* Page header (coursework) */
 .page-head { padding: 72px 0 40px; border-bottom: 1px solid var(--line); }
 .page-head h1 { font-size: clamp(30px, 4.5vw, 44px); letter-spacing: -0.03em; margin: 0 0 12px; }
-.page-head p { color: var(--ink-2); max-width: 640px; margin: 0; font-size: 17px; }
+.page-head p { color: var(--ink-2); margin: 0; font-size: 17px; }
 
 /* Responsive */
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 32px; }
-  .photo { width: 180px; height: 180px; order: -1; }
+  .photo { width: 160px; height: 160px; order: -1; }
+  .hero h1 { white-space: normal; font-size: clamp(30px, 8vw, 40px); }
   .project { grid-template-columns: 1fr; gap: 20px; }
   .project .media { order: -1; }
   .about-grid, .cols, .cards { grid-template-columns: 1fr; gap: 32px; }
@@ -198,4 +199,28 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
   section { padding: 60px 0; }
   .skills { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: 1fr; }
+  .hero .lead, .section-head p, .project p, .card p, .about-grid p, .timeline p, .page-head p, .contact p { text-align: left; }
 }
+
+/* Justified paragraph text */
+.hero .lead, .section-head p, .project p, .card p, .about-grid p, .timeline p, .page-head p, .contact p {
+  text-align: justify; hyphens: auto; -webkit-hyphens: auto;
+}
+.project p.note, .project p.role { text-align: left; }
+
+/* Coursework card previews */
+.card .thumb {
+  display: block; margin: -22px -22px 18px; border-bottom: 1px solid var(--line);
+  border-radius: var(--radius) var(--radius) 0 0; overflow: hidden; background: var(--soft); aspect-ratio: 16 / 9;
+}
+.card .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .25s ease; }
+.card .thumb:hover img { transform: scale(1.03); }
+.card { overflow: hidden; }
+
+.page-head { padding: 64px 0 32px; }
+.coursework-list { padding-top: 48px; }
+.year[hidden] { display: none; }
+
+/* Avoid single dangling words at the end of paragraphs */
+p { text-wrap: pretty; }
+.section-head p, .page-head p { text-align: left; }

@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.2.0] – 2026-11-26
+### Removed
+- Year filter on the coursework page (year headings kept).
+
+### Changed
+- Shortened the Featured projects, Leadership and Coursework intros so each fits on one line; paragraphs avoid single dangling words.
+- Lightly blurred program, college, event and project names in the dashboard screenshots.
+
+## [1.1.0] – 2026-11-26
+### Added
+- Report preview image on every coursework card; clicking it opens the report.
+- Year filter (All, 4th, 3rd, 2nd, 1st year) on the coursework page.
+- Workbook screenshot for the Excel VBA Contact Manager, with personal details blurred.
+
+### Changed
+- AURA capstone is now the first featured project.
+- Paragraph text is justified (left-aligned on small phones for readability).
+- Name in the header fits on one line on desktop.
+- Coursework header tidied: removed the year label and tightened spacing.
+
 ## [1.0.0] – 2026-11-26
 ### Added
 - Landing page with intro, 7 featured projects (RAG chatbot, EBEWE ranking model, AURA capstone, LA payroll overtime classifier, CSC Events Analytics Dashboard, statistical modeling in R, Excel VBA Contact Manager), about, skills, leadership, honors and certifications, and contact sections.
