@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coursework | Blanzy Cinco</title>
+  <meta name="description" content="Analytics coursework by Blanzy Cinco, BSIT Business Analytics, José Rizal University, grouped by year.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Blanzy Cinco</a>
+    <div class="nav-links">
+      <a href="index.html#projects" class="keep">Projects</a>
+      <a href="coursework.html" class="active">Coursework</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="btn small" href="files/Blanzy_Cinco_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">2023 &ndash; 2026</p>
+    <h1>Coursework</h1>
+    <p>More analytics work from my four years at José Rizal University, beyond the <a href="index.html#projects">featured projects</a>. Most are IEEE-format reports; each opens as a PDF.</p>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+
+    <div class="year">
+      <h3>4th year</h3>
+      <div class="cards">
+        <article class="card">
+          <p class="tag">ITC C611 · Analytics Application</p>
+          <h4>Chunk size and overlap for FAISS retrieval: a controlled experiment</h4>
+          <p>Fifteen chunking configurations, each with its own FAISS index, scored on 30 verified questions over a student-organization constitution, with bootstrap confidence intervals and Holm-corrected tests. Chunk size mattered; overlap barely did.</p>
+          <p class="key">Recall@3 rose from 0.502 at 300 characters to 0.732 at 1,500</p>
+          <ul class="chips"><li>FAISS</li><li>Hugging Face</li><li>Qwen2.5</li><li>Google Colab</li></ul>
+          <div class="links"><a class="btn ghost small" href="files/C611_Chunk_Size_Experiment_Report.pdf" target="_blank" rel="noopener">Read report</a></div>
+        </article>
+        <article class="card">
+          <p class="tag">ITC C611 · Analytics Application</p>
+          <h4>RAG chatbot parameter tuning and GPU testing</h4>
+          <p>Tuned chunk size, overlap and top-k for a constitution chatbot, scoring answer quality on 30 verified questions, then benchmarked three configurations on a T4 GPU against a CPU-only runtime.</p>
+          <p class="key">GPU 20.3 to 21.7 times faster; average response fell from 74.4 s to 3.4 s</p>
+          <ul class="chips"><li>LangChain</li><li>Chroma</li><li>Qwen2.5</li><li>Google Colab</li></ul>
+          <div class="links"><a class="btn ghost small" href="files/C611_RAG_Tuning_GPU_Testing_Report.pdf" target="_blank" rel="noopener">Read report</a></div>
+        </article>
+        <article class="card">
+          <p class="tag">ITC C611 · Analytics Application</p>
+          <h4>Hyperparameter ablation and loss diagnostics in Keras</h4>
+          <p>Rebuilt an airline-feedback text classifier in Keras and ran seven experiments on learning rate, layer size, dropout, optimizer, batch size and epochs, using loss curves to diagnose underfitting and overfitting.</p>
+          <p class="key">Six of seven experiments beat the 97.14% benchmark; the best reached about 98.44% accuracy</p>
+          <ul class="chips"><li>Keras</li><li>TensorFlow</li></ul>
+          <div class="links"><a class="btn ghost small" href="files/C611_PT-P2_Keras_Hyperparameter_Ablation_Report.pdf" target="_blank" rel="noopener">Read report</a></div>
+        </article>
+        <article class="card">
+          <p class="tag">ITC C611 · Analytics Application</p>
+          <h4>Neural text classification for airline customer feedback triage</h4>
+          <p>A no-code neural classifier that sorts simulated airline feedback into four classes. Beyond the required tests, I scaled up the training set and ran adversarial rounds that exposed shortcut learning.</p>
+          <p class="key">97.2% accuracy on the required test items; sarcasm and negation exposed its limits</p>
+          <ul class="chips"><li>Machine Learning for Kids</li><li>IBM Watson</li></ul>
+          <div class="links"><a class="btn ghost small" href="files/C611_PT-P1_Neural_Text_Classification_Report.pdf" target="_blank" rel="noopener">Read report</a></div>
+        </article>
+        <article class="card">
+          <p class="tag">ITC C611 · Analytics Application</p>
+          <h4>A retrieval-augmented chatbot for student-organization governance</h4>
+          <p>Evaluated a RAG chatbot over the JPCS-JRU Constitution and By-Laws on grounding and refusal, across three configurations and five sessions. Removing the fallback directive changed how it refused, not whether it refused.</p>
+          <p class="key">8 of 8 clause-level questions answered correctly; abstained on every out-of-domain probe</p>
+          <ul class="chips"><li>LangChain</li><li>ChromaDB</li><li>Groq</li></ul>
+          <div class="links"><a class="btn ghost small" href="files/C611_PT-M1_Governance_Chatbot_Report.pdf" target="_blank" rel="noopener">Read report</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="year">
+      <h3>3rd year</h3>
+      <div class="cards">
+        <article class="card">
+          <p class="tag">ITC C610 · Fundamentals of Analytics Modelling</p>
+          <h4>Predictive modeling in human resources</h4>
+          <p>A case-study review of a published study on predicting employee turnover, covering the business problem, the IBM HR Analytics dataset, the key predictors, and how four classifiers were compared.</p>
+          <p class="key">1,470 employee records; Random Forest selected as the final model in the reviewed study</p>
+          <ul class="chips"><li>Classification</li><li>Model evaluation</li></ul>
+          <div class="links"><a class="btn ghost small" href="files/C610_HR_Predictive_Modeling_Report.pdf" target="_blank" rel="noopener">Read report</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="year">
+      <h3>2nd year</h3>
+      <div class="cards">
+        <article class="card">
+          <p class="tag">ITC C605 · Statistical Analysis Using R</p>
+          <h4>Data analysis of traffic collisions in Los Angeles</h4>
+          <p>Cleaning, demographic and time-pattern EDA, and a leaflet map of LAPD collision data. A regression that broke its assumptions was fixed with a log transformation.</p>
+          <p class="key">433,502 cases; the log-transformed model reached an R&sup2; of 0.9986</p>
+          <ul class="chips"><li>R</li><li>dplyr</li><li>ggplot2</li><li>leaflet</li></ul>
+          <div class="links"><a class="btn ghost small" href="files/C605_LA_Traffic_Collisions_Report.pdf" target="_blank" rel="noopener">Read report</a></div>
+        </article>
+        <article class="card">
+          <p class="tag">ITC C605 · Statistical Analysis Using R</p>
+          <h4>Basic analysis and data operations using R pipes</h4>
+          <p>Cleaned and analysed the UCI Online Retail dataset with dplyr pipes, filtering out non-revenue entries and calculating transaction totals.</p>
+          <p class="key">541,909 transactions cleaned to 527,948 rows</p>
+          <ul class="chips"><li>R</li><li>dplyr</li><li>lubridate</li></ul>
+          <div class="links"><a class="btn ghost small" href="files/C605_R_Pipes_Data_Operations_Report.pdf" target="_blank" rel="noopener">Read report</a></div>
+        </article>
+        <article class="card">
+          <p class="tag">ITC C605 · Statistical Analysis Using R</p>
+          <h4>Analysis of the Australian Football League using R</h4>
+          <p>Descriptive statistics on AFL match margins and finalists in RStudio, documenting the commands used, the errors met and how each was fixed.</p>
+          <p class="key">Mean margin 35.30 points (SD 26.07); Geelong the most frequent finalist</p>
+          <ul class="chips"><li>R</li><li>RStudio</li><li>lsr</li></ul>
+          <div class="links"><a class="btn ghost small" href="files/C605_AFL_Analysis_Report.pdf" target="_blank" rel="noopener">Read report</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="year">
+      <h3>1st year</h3>
+      <div class="cards">
+        <article class="card">
+          <p class="tag">ITC C604 · Data Analysis Using Excel</p>
+          <h4>Consumer shopping behavior: Excel analysis</h4>
+          <p>Computed the percentage change in each customer's purchases, split customers into top and bottom groups, and compared them with descriptive statistics, conditional formatting, a histogram and an outlier check.</p>
+          <p class="key">3,900 records across 12 analysis sheets and 5 charts</p>
+          <ul class="chips"><li>Excel</li><li>Descriptive statistics</li><li>Charts</li></ul>
+          <div class="links"><a class="btn ghost small" href="files/C604_Consumer_Shopping_Excel_Analysis.xlsm">Download workbook</a></div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Blanzy Gwynneth Faith N. Cinco</span>
+    <span><a href="index.html">Home</a> &middot; <a href="mailto:blanzycinco@gmail.com">Email</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

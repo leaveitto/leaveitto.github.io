@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blanzy Cinco | Business Analytics Portfolio</title>
+  <meta name="description" content="Portfolio of Blanzy Gwynneth Faith N. Cinco, a 4th-year BSIT Business Analytics student at José Rizal University: data analysis, machine learning and dashboard projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Blanzy Cinco</a>
+    <div class="nav-links">
+      <a href="#projects" class="keep">Projects</a>
+      <a href="coursework.html">Coursework</a>
+      <a href="#about">About</a>
+      <a href="#experience">Leadership</a>
+      <a href="#contact">Contact</a>
+      <a class="btn small" href="files/Blanzy_Cinco_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Business Analytics · Data Analysis · Machine Learning</p>
+      <h1>Blanzy Gwynneth Faith N. Cinco</h1>
+      <p class="lead">Fourth-year BSIT Business Analytics student at José Rizal University and DOST-SEI scholar. I turn messy data into answers people can act on, from ranking models and retention analytics to dashboards and retrieval-augmented chatbots.</p>
+      <div class="actions">
+        <a class="btn" href="#projects">View projects</a>
+        <a class="btn ghost" href="files/Blanzy_Cinco_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/blanzy-cinco" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="status">Open to analytics OJT from December 2026</p>
+    </div>
+    <img class="photo" src="assets/photo.jpg" alt="Portrait of Blanzy Cinco">
+  </div>
+</header>
+
+<main>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Featured projects</h2>
+        <p>Selected work from my analytics courses and capstone. Reports open as PDFs; live apps open in a new tab.</p>
+      </div>
+      <a class="btn ghost small" href="coursework.html">All coursework &rarr;</a>
+    </div>
+
+    <div class="projects">
+
+      <!-- 1. RAG chatbot -->
+      <article class="project">
+        <div>
+          <p class="tag">ITC C611 · Analytics Application · 2026</p>
+          <h3>A RAG chatbot that answers from JRU's official bulletin</h3>
+          <p>Ask about a program, a prerequisite or a school policy, and this chatbot answers from JRU's 280-page College General Information bulletin, citing the pages it used. Before choosing the retrieval design, I ran a pre-registered chunking experiment and two follow-up studies. The winner, hybrid semantic and keyword search with course-code re-ranking, now runs live on Render.</p>
+          <ul class="stats">
+            <li><div class="num">0.60 &rarr; 0.92</div><div class="lbl">Evidence recall at five after tuning</div></li>
+            <li><div class="num">28 / 32</div><div class="lbl">Answered correctly, and all 10 out-of-scope questions declined</div></li>
+          </ul>
+          <p class="role">Solo project · design, evaluation and deployment · code written with AI assistance, disclosed in the report</p>
+          <ul class="chips"><li>Python</li><li>Sentence-Transformers</li><li>ChromaDB</li><li>BM25</li><li>Groq (Qwen)</li><li>FastAPI</li><li>Render</li></ul>
+          <div class="links">
+            <a class="btn small" href="https://jru-gi-assistant.onrender.com" target="_blank" rel="noopener">Live demo</a>
+            <a class="btn ghost small" href="https://github.com/leaveitto/jru-gi-assistant" target="_blank" rel="noopener">Code</a>
+            <a class="btn ghost small" href="files/C611_RAG_Chatbot_Report.pdf" target="_blank" rel="noopener">IEEE report</a>
+          </div>
+          <p class="note">The demo runs on a free server, so the first load can take up to a minute.</p>
+        </div>
+        <a class="media" href="files/C611_RAG_Chatbot_Report.pdf" target="_blank" rel="noopener">
+          <img src="assets/prev_rag.jpg" alt="Bar chart of mean evidence recall across four retrieval designs" loading="lazy">
+          <span class="cap">Retrieval results</span>
+        </a>
+      </article>
+
+      <!-- 2. EBEWE -->
+      <article class="project">
+        <div>
+          <p class="tag">ITC C612 · Analytics Techniques and Tools · 2026</p>
+          <h3>Who files, not what is filed: finding non-compliant building reports</h3>
+          <p>Los Angeles reported a 45-point drop in building energy compliance. After working through 96,213 filings, I found most of that drop came from incomplete paperwork rather than failing buildings, and that the organization filing a report predicts compliance better than the building does. I turned the finding into a model that tells reviewers which filings to check first, served through a Streamlit dashboard.</p>
+          <ul class="stats">
+            <li><div class="num">86.8%</div><div class="lbl">Of the top 250 flagged filings were non-compliant, vs 7.9% at random</div></li>
+            <li><div class="num">63%</div><div class="lbl">Of the reported decline came from incomplete filings</div></li>
+          </ul>
+          <p class="role">Solo project</p>
+          <ul class="chips"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>Plotly</li><li>Streamlit</li></ul>
+          <div class="links">
+            <a class="btn small" href="https://ebewe-dashboard.streamlit.app/" target="_blank" rel="noopener">Live dashboard</a>
+            <a class="btn ghost small" href="https://github.com/leaveitto/ebewe-dashboard" target="_blank" rel="noopener">Code</a>
+            <a class="btn ghost small" href="files/C612_EBEWE_Final_Project_Paper.pdf" target="_blank" rel="noopener">IEEE paper</a>
+            <a class="btn ghost small" href="files/C612_EBEWE_Data_Story.pdf" target="_blank" rel="noopener">Data story</a>
+          </div>
+        </div>
+        <a class="media navy" href="files/C612_EBEWE_Data_Story.pdf" target="_blank" rel="noopener">
+          <img src="assets/prev_ebewe.jpg" alt="Cover slide of the data story: When a building fails, what actually failed?" loading="lazy">
+          <span class="cap">Data story</span>
+        </a>
+      </article>
+
+      <!-- 3. AURA -->
+      <article class="project">
+        <div>
+          <p class="tag">ITC C310 / C403 · IT Project (Capstone) · 2026</p>
+          <h3>AURA: retention analytics for a real client</h3>
+          <p>Our capstone, built for the Analytics and AI Association of the Philippines. AURA pulls the association's membership, event, registration, attendance and survey records into one system, then flags members who are likely to lapse and explains each flag in plain language.</p>
+          <ul class="stats">
+            <li><div class="num">2.7&times;</div><div class="lbl">Better than chance at spotting lapses (PR-AUC 0.516 vs 0.192)</div></li>
+            <li><div class="num">4.22 / 5</div><div class="lbl">Rating from 30 evaluators (ISO/IEC 25010)</div></li>
+          </ul>
+          <p class="role">System Developer, team of two · cleaned 1,790 member records and 43 engagement files, built the retention model, and delivered every change our panel requested</p>
+          <ul class="chips"><li>Python</li><li>scikit-learn</li><li>SMOTE-NC</li><li>SHAP</li><li>PostgreSQL</li></ul>
+          <div class="links">
+            <a class="btn ghost small" href="https://aapreportsandanalytics.org" target="_blank" rel="noopener">Live system (login required)</a>
+          </div>
+          <p class="note">AURA is a private client system, so its documents and data stay private.</p>
+        </div>
+        <a class="media cover" href="https://aapreportsandanalytics.org" target="_blank" rel="noopener">
+          <img src="assets/prev_aura.jpg" alt="AURA logo" loading="lazy">
+          <span class="cap">Private client system</span>
+        </a>
+      </article>
+
+      <!-- 4. Payroll -->
+      <article class="project">
+        <div>
+          <p class="tag">ITC C610 · Fundamentals of Analytics Modelling · 2026</p>
+          <h3>Which city employees depend on overtime?</h3>
+          <p>Using 686,091 public payroll records from the City of Los Angeles, I compared four classifiers at spotting employees who rely heavily on overtime. Overtime pay itself was kept out of the inputs so the models couldn't simply read the answer. A second model predicts total pay from six job features.</p>
+          <ul class="stats">
+            <li><div class="num">87.82%</div><div class="lbl">Accuracy with Random Forest (ROC-AUC 0.9268)</div></li>
+            <li><div class="num">0.9852</div><div class="lbl">R&sup2; when predicting total pay</div></li>
+          </ul>
+          <ul class="chips"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>Random Forest</li><li>Google Colab</li></ul>
+          <div class="links">
+            <a class="btn ghost small" href="files/C610_Payroll_Overtime_Classifier_Report.pdf" target="_blank" rel="noopener">IEEE report</a>
+          </div>
+        </div>
+        <a class="media" href="files/C610_Payroll_Overtime_Classifier_Report.pdf" target="_blank" rel="noopener">
+          <img src="assets/prev_payroll.jpg" alt="Bar chart of overtime dependency rate by department" loading="lazy">
+          <span class="cap">Overtime dependency by department</span>
+        </a>
+      </article>
+
+      <!-- 5. Looker dashboard -->
+      <article class="project">
+        <div>
+          <p class="tag">ITC C609 · Enterprise Data Management · 2025</p>
+          <h3>Events analytics dashboard for the Central Student Council</h3>
+          <p>For our research proposal on data management for student organizations, I built this Looker Studio prototype for the JRU Central Student Council. It gives the council one place to follow its events, see who is taking part, and track which event reports are still missing.</p>
+          <ul class="stats">
+            <li><div class="num">4</div><div class="lbl">Dashboard pages, from overview to activity progress</div></li>
+            <li><div class="num">30</div><div class="lbl">Council projects tracked, with participants from 7 colleges</div></li>
+          </ul>
+          <div class="thumbs">
+            <a href="assets/dash_about.jpg" target="_blank" rel="noopener"><img src="assets/dash_about.jpg" alt="About page" loading="lazy"></a>
+            <a href="assets/dash_demographic.jpg" target="_blank" rel="noopener"><img src="assets/dash_demographic.jpg" alt="Participants' Demographic page" loading="lazy"></a>
+            <a href="assets/dash_activity.jpg" target="_blank" rel="noopener"><img src="assets/dash_activity.jpg" alt="Activity Progress page" loading="lazy"></a>
+          </div>
+          <p class="role">Dashboard developer, team DASH</p>
+          <ul class="chips"><li>Google Looker Studio</li><li>Dashboard design</li></ul>
+          <div class="links">
+            <a class="btn ghost small" href="files/C609_EDMS_Research_Proposal.pdf" target="_blank" rel="noopener">Research proposal</a>
+          </div>
+        </div>
+        <a class="media" href="assets/dash_overview.jpg" target="_blank" rel="noopener">
+          <img src="assets/dash_overview.jpg" alt="Dashboard Overview page with KPIs and report completion status" loading="lazy">
+          <span class="cap">Overview page</span>
+        </a>
+      </article>
+
+      <!-- 6. R modeling -->
+      <article class="project">
+        <div>
+          <p class="tag">ITC C605 · Data Management and Statistical Analysis Using R · 2025</p>
+          <h3>Statistical modeling in R</h3>
+          <p>Two studies. The first predicts high-ozone days against the WHO threshold, testing baseline, stepwise, LASSO and Ridge logistic models; the simplest, using only temperature and wind, held up best. The second models garlic sales from a Philippine farm survey, with backward, forward and bidirectional selection each written by hand.</p>
+          <ul class="stats">
+            <li><div class="num">86.4%</div><div class="lbl">Accuracy of the final ozone model (F1-score 0.86)</div></li>
+            <li><div class="num">3</div><div class="lbl">Selection methods coded by hand for the garlic model</div></li>
+          </ul>
+          <ul class="chips"><li>R</li><li>dplyr</li><li>caret</li><li>glmnet</li><li>ggplot2</li><li>tidyverse</li></ul>
+          <div class="links">
+            <a class="btn ghost small" href="files/C605_Ozone_Logistic_Regression_Report.pdf" target="_blank" rel="noopener">Ozone report</a>
+            <a class="btn ghost small" href="files/C605_Garlic_Stepwise_Regression_Report.pdf" target="_blank" rel="noopener">Garlic report</a>
+          </div>
+        </div>
+        <a class="media cover" href="files/C605_Ozone_Logistic_Regression_Report.pdf" target="_blank" rel="noopener">
+          <img src="assets/prev_ozone.jpg" alt="First page of the ozone logistic regression report" loading="lazy">
+          <span class="cap">IEEE report</span>
+        </a>
+      </article>
+
+      <!-- 7. VBA -->
+      <article class="project">
+        <div>
+          <p class="tag">ITC C603 · Macro Programming · 2023</p>
+          <h3>Excel VBA contact manager</h3>
+          <p>A first-year automation project: a contact manager in Excel, driven by VBA macros. Add a contact, pull any saved contact back into the entry fields by row, and keep each record's address, email, phone number and photo together.</p>
+          <ul class="stats">
+            <li><div class="num">2023</div><div class="lbl">Built in Macro Programming, 1st year</div></li>
+          </ul>
+          <ul class="chips"><li>Excel</li><li>VBA</li><li>Macros</li></ul>
+          <p class="note">Workbook available on request.</p>
+        </div>
+        <div class="media tile">
+          <div class="grid">
+            <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <span class="big" style="font-size:30px">Excel &middot; VBA</span>
+          <span class="small">Contact manager</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head"><div><h2>About</h2></div></div>
+    <div class="about-grid">
+      <div>
+        <p>I'm a fourth-year BS Information Technology student majoring in Business Analytics at José Rizal University, a DOST Undergraduate Scholar, and a consistent Dean's Lister. What draws me to analytics is the point where a messy dataset starts answering a real question.</p>
+        <p>My work spans the full analytics workflow: cleaning and validating data, exploring it, building and evaluating models, and presenting the results through dashboards and written reports. I'm looking for an OJT placement in business analysis, data analysis, business intelligence or data science.</p>
+      </div>
+      <ul class="facts">
+        <li><span>University</span><span>José Rizal University</span></li>
+        <li><span>Program</span><span>BSIT, Major in Business Analytics</span></li>
+        <li><span>Expected graduation</span><span>April 2027</span></li>
+        <li><span>GWA</span><span>1.54 (1.0 = highest)</span></li>
+        <li><span>Location</span><span>Metro Manila, Philippines</span></li>
+        <li><span>Available for OJT</span><span>December 2026</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Skills</h2></div></div>
+    <div class="skills">
+      <div>
+        <h3>Analytics</h3>
+        <ul class="chips"><li>Data Analysis</li><li>Data Cleaning</li><li>Data Visualization</li><li>Data Storytelling</li><li>Business Analysis</li><li>Data Science</li></ul>
+      </div>
+      <div>
+        <h3>Machine learning and AI</h3>
+        <ul class="chips"><li>Machine Learning</li><li>Retrieval-Augmented Generation</li><li>Natural Language Processing</li><li>Prompt Engineering</li><li>Artificial Intelligence</li></ul>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <ul class="chips"><li>Python</li><li>R</li><li>Microsoft Excel</li><li>Power BI</li><li>Tableau</li><li>Looker Studio</li></ul>
+      </div>
+      <div>
+        <h3>Professional</h3>
+        <ul class="chips"><li>Leadership</li><li>Communication</li><li>Project Management</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Leadership</h2><p>Student leadership at the Junior Philippine Computer Society, JRU Chapter, and the NCR Alliance of DOST Scholars.</p></div></div>
+    <ul class="timeline">
+      <li>
+        <div class="when">AY 2026 &ndash; present</div>
+        <div><h4>Vice President &ndash; External</h4><p class="org">Junior Philippine Computer Society &ndash; JRU Chapter</p><p>Manage the chapter's external relations and partnerships with companies, organizations and other student chapters.</p></div>
+      </li>
+      <li>
+        <div class="when">AY 2025 &ndash; 2026</div>
+        <div><h4>President</h4><p class="org">Junior Philippine Computer Society &ndash; JRU Chapter</p><p>Led 15 programs for IT and IT-BA students, including a Gen AI Prompt Engineering Workshop with Cognizant and J&amp;J (60&ndash;70 participants), the BSIT Research Colloquium, and CSE Week competitions in data analytics, UI/UX design and pitching. During my term, the chapter earned National Youth Commission registration, an Active Organization Award and four JRU Rizal Awards.</p></div>
+      </li>
+      <li>
+        <div class="when">AY 2024 &ndash; 2025</div>
+        <div><h4>Internal Public Relations Officer</h4><p class="org">Junior Philippine Computer Society &ndash; JRU Chapter</p><p>Managed the chapter's internal communications and social media page, and led a UI/UX Workshop for Grade 12 STEM students as Project Head.</p></div>
+      </li>
+      <li>
+        <div class="when">AY 2023 &ndash; 2024</div>
+        <div><h4>JRU Representative</h4><p class="org">NCR Alliance of DOST Scholars</p><p>Linked JRU's DOST scholars to the regional alliance and built a support network among them.</p></div>
+      </li>
+      <li>
+        <div class="when">AY 2023 &ndash; 2024</div>
+        <div><h4>1st Year BSIT-BA Representative</h4><p class="org">José Rizal University</p><p>Represented first-year BSIT-BA students.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="honors">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Honors and certifications</h2></div></div>
+    <div class="cols">
+      <div>
+        <h3>Honors</h3>
+        <ul class="plain">
+          <li><strong>Ten Outstanding Rizalian Student Leaders</strong><span>ASCENDRA: Rizalian Excellence Awards, June 2026</span></li>
+          <li><strong>Gold Rizal Awards</strong><span>Leadership Excellence, Outstanding Achievement and Community Involvement, June 2026</span></li>
+          <li><strong>Dean's List</strong><span>College of Computer Studies and Engineering, AY 2023&ndash;2026</span></li>
+          <li><strong>Top-Performing Student, BSIT Business Analytics</strong><span>CSE Week 2024</span></li>
+          <li><strong>DOST-SEI Undergraduate Scholar (RA 7687)</strong><span>AY 2023&ndash;2027</span></li>
+          <li><strong>JRU Academic B Scholar</strong><span>AY 2023&ndash;2025</span></li>
+          <li><strong>DataCamp Scholar</strong><span>2026</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Certifications and training</h3>
+        <ul class="plain">
+          <li><strong>AI for Good Workshop</strong><span>AI Singapore, supported by Meta, May 2025 &middot; passed the final assessment</span></li>
+          <li><strong>Prompt Engineering Workshop: Thriving in the Gen AI Economy</strong><span>Cognizant, August 2024 &middot; 1st place, group challenge</span></li>
+          <li><strong>DATA FUTURE PH 2025</strong><span>Data Analytics Philippines, November 2025</span></li>
+          <li><strong>ASEAN Data Science Explorers 2026</strong><span>ASEAN Foundation and SAP</span></li>
+          <li><strong>Adopt and Adapt: Navigating AI Integration in Schools and Universities</strong><span>SEARCA, March 2025</span></li>
+          <li><strong>DOST-SEI Scholars Leadership Camp</strong><span>DOST-SEI, March 2025</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>I'm looking for an analytics OJT starting December 2026. The quickest way to reach me is by email or LinkedIn.</p>
+    <div class="actions">
+      <a class="btn" href="mailto:blanzycinco@gmail.com">blanzycinco@gmail.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/blanzy-cinco" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/leaveitto" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Blanzy Gwynneth Faith N. Cinco</span>
+    <span><a href="coursework.html">Coursework</a> &middot; <a href="files/Blanzy_Cinco_Resume.pdf" target="_blank" rel="noopener">Resume</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
