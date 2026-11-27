@@ -2,7 +2,7 @@
 
 ## [1.3.1] – 2026-11-27
 ### Added
-- "View certificates on LinkedIn" button under Certifications and training.
+- "View honors on LinkedIn" and "View certificates on LinkedIn" buttons under Honors and under Certifications and training.
 
 ### Changed
 - The Central Student Council project is now described as a Looker Studio dashboard instead of a prototype.
