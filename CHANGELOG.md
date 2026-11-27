@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.1] – 2026-11-27
+### Added
+- "View certificates on LinkedIn" button under Certifications and training.
+
+### Changed
+- The Central Student Council project is now described as a Looker Studio dashboard instead of a prototype.
+- Honors and certification lines wrap evenly, with no single word left on its own line.
+
 ## [1.3.0] – 2026-11-26
 ### Changed
 - Coursework page shows all 10 outputs in one grid, newest first; each card's tag now starts with its year level (e.g. "4th Year · ITC C611").
