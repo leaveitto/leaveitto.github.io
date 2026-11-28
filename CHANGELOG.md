@@ -3,6 +3,7 @@
 ## [1.4.0] – 2026-11-28
 ### Changed
 - EBEWE project preview now shows the live Streamlit dashboard instead of the data story cover, and clicking it opens the dashboard.
+- RAG chatbot preview now shows the live GI Assistant instead of the retrieval results chart, and clicking it opens the demo.
 - Central Student Council dashboard moved to second in Featured projects, right after AURA.
 
 ## [1.3.1] – 2026-11-27
