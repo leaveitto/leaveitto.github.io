@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.4.0] – 2026-11-28
+### Changed
+- EBEWE project preview now shows the live Streamlit dashboard instead of the data story cover, and clicking it opens the dashboard.
+- Central Student Council dashboard moved to second in Featured projects, right after AURA.
+
 ## [1.3.1] – 2026-11-27
 ### Added
 - "View honors on LinkedIn" and "View certificates on LinkedIn" buttons under Honors and under Certifications and training.
